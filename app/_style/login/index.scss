@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+// @import "@/app/(dashboard)/_style/_vars/vars";
+
+// body,
+// html {
+//     margin: 0;
+//     padding: 0;
+//     background-image: url("/dashboard/background/big-bck.png");
+//     background-repeat: no-repeat;
+//     background-size: cover;
+//     min-height: calc(100vh - 101px);
+//     position: relative;
+// }
+
+// @mixin windowWidth ($winwidth: 1440px, $winMarg: 0 auto) {
+//     max-width: $winwidth;
+//     min-width: 320px;
+//     margin: $winMarg;
+
+//     @media screen and (max-width: 1440px) {
+//         width: 90%;
+//     }
+// }
+
+// .elementWidth {
+//     @include windowWidth();
+// }
+
+
+// @import "./_components/navbar";
+// @import "./_components/reg";
+// @import "./_pages/dashboard/admin-page";
+// @import "./_pages/dashboard/category-page";
+// @import "./_ui/list-item";
+// @import "./_components/footer.dash";
