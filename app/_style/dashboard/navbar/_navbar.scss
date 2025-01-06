@@ -1,0 +1,21 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: clamp(1rem, 0.128vw + 0.971rem, 1.125rem); //16px 18px
+    margin-bottom: 40px;
+    font-weight: bold;
+    padding: 8px 0;
+    a {
+        margin-right: 12px;
+    }
+
+    button {
+        margin-left: 24px;
+    }
+}
+
+.nav__user {
+    display: flex;
+    align-items: center;
+}

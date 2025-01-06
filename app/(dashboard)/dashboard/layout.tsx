@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import "@/app/_style/dashboard/index.scss";
+import NavBar from "@/app/_components/navbar/NavBar";
+import { magra } from "@/app/_font/font";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -12,9 +14,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className={magra.className}>
       <body>
-        {children}
+        <NavBar />
+        <main>
+          {children}
+        </main>
       </body>
     </html>
   );

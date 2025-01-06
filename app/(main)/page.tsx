@@ -1,6 +1,6 @@
 
 export default function Home() {
   return (
-    <main>rgergerg</main>
+    <main>MAIN PAGE</main>
   );
 }

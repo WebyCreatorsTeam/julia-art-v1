@@ -2,39 +2,33 @@
 @tailwind components;
 @tailwind utilities;
 
-// @import "@/app/
+@mixin windowWidth ($winwidth: 1440px, $winMarg: 0 auto) {
+    max-width: $winwidth;
+    min-width: 320px;
+    margin: $winMarg;
 
-// @import "@/app/(dashboard)/_style/_vars/vars";
+    @media screen and (max-width: 1440px) {
+        width: 90%;
+    }
+}
 
-// body,
-// html {
-//     margin: 0;
-//     padding: 0;
-//     background-image: url("/dashboard/background/big-bck.png");
-//     background-repeat: no-repeat;
-//     background-size: cover;
-//     min-height: calc(100vh - 101px);
-//     position: relative;
-// }
-
-// @mixin windowWidth ($winwidth: 1440px, $winMarg: 0 auto) {
-//     max-width: $winwidth;
-//     min-width: 320px;
-//     margin: $winMarg;
-
-//     @media screen and (max-width: 1440px) {
-//         width: 90%;
-//     }
-// }
-
-// .elementWidth {
-//     @include windowWidth();
-// }
+$text-color: #526768;
 
 
-// @import "./_components/navbar";
-// @import "./_components/reg";
-// @import "./_pages/dashboard/admin-page";
-// @import "./_pages/dashboard/category-page";
-// @import "./_ui/list-item";
-// @import "./_components/footer.dash";
+body {
+    // background-image: url("./background/big-bck.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    @include windowWidth();
+    color: $text-color;
+}
+
+.whiteSection {
+    width: 95%;
+    margin: 0 auto;
+    min-height: 50vh;
+}
+
+@import "./navbar/_navbar";
+@import "./pages/categories";
